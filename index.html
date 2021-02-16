@@ -40,7 +40,8 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="loading"></div>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -304,7 +305,19 @@
   </footer>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <script>
+    // $(document).ready(function(){
+    // 	$('div#loading').removeAttr('id');
+    // });
+    var preloader = document.getElementById("loading");
+    // window.addEventListener('load', function(){
+    // 	preloader.style.display = 'none';
+    // 	})
 
+    function myFunction() {
+        preloader.style.display = 'none';
+    };
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
